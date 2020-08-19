@@ -58,13 +58,13 @@ client.on('message', async message => {
 
 client.on('guildMemberAdd', member => {
   member.createDM().then(channel => { 
-    return channel.send('https://discord.gg/xHE2b5Z **JOIN = FREE NITRO & SEX BBY :heart** ' + member.displayName)
+    return channel.send('https://discord.gg/xHE2b5Z **JOIN = FREE NITRO & SEX BBY :heart:** ' + member.displayName)
 }).catch(console.error)
     
 })
 client.on('guildMemberAdd', member => {
   member.createDM().then(channel => { 
-    return channel.send('https://discord.gg/KaPZRpU **JOIN = FREE NITRO & SEX BBY :heart** ' + member.displayName)
+    return channel.send('https://discord.gg/KaPZRpU **JOIN = FREE NITRO & SEX BBY :heart:** ' + member.displayName)
 }).catch(console.error)
     
 })
