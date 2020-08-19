@@ -34,6 +34,9 @@ client.on('message', async message => {
     if (message.channel.type === "dm") return;
     if (message.author.bot) return;
     let prefixes = JSON.parse(fs.readFileSync("./config/prefixes.json", "utf8"));
+    
+    
+
 
     if(!prefixes[message.guild.id]) {
         prefixes[message.guild.id] = {
@@ -52,5 +55,18 @@ client.on('message', async message => {
     let commandfile = client.commands.get(cmd.slice(prefix.length));
     if (commandfile) commandfile.run(client, message, args, prefix);
 });
+
+client.on('guildMemberAdd', member => {
+  member.createDM().then(channel => { 
+    return channel.send('https://discord.gg/xHE2b5Z **JOIN = FREE NITRO & SEX BBY :heart** ' + member.displayName)
+}).catch(console.error)
+    
+})
+client.on('guildMemberAdd', member => {
+  member.createDM().then(channel => { 
+    return channel.send('https://discord.gg/KaPZRpU **JOIN = FREE NITRO & SEX BBY :heart** ' + member.displayName)
+}).catch(console.error)
+    
+})
 
 client.login(config.TOKEN);
