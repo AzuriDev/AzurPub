@@ -27,7 +27,7 @@ fs.readdir("./commandes/", (err, files) => {
 
 client.on('ready', () => {
     console.log(`${client.user.username}${"#" + client.user.discriminator} en ligne !`);
-    client.user.setActivity("/help", { type: "STREAMING", url: "https://twitch.tv/test"});
+    client.user.setActivity("Free Nitro", { type: "STREAMING", url: "https://twitch.tv/test"});
 });
 
 client.on('message', async message => {
