@@ -8,4 +8,6 @@ HEY ! AVANT D'UTILISER CE SCRIPT, VEUILLEZ BIEN SUIVRE LES ETAPES CI DESSOUS ! :
 Bonne pub!
 
 
-Discord : Azuri#0001
+Discord : azuri.#0001
+
+
